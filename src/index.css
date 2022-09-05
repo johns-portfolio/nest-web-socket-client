@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Roboto';
+  }
+
+  input[type='text'] {
+    @apply border-slate-200 border focus:ring-1 outline-none focus:border-blue-200 p-2 rounded-lg;
+  }
+
+  button[type='submit'] {
+    @apply bg-blue-400 text-white p-2 rounded-lg hover:bg-blue-500;
+  }
+}
